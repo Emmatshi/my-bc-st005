@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "streamlit-ai-template"
+name = "my-bc-st005"
 version = "0.1.0"
 description = "Reusable Streamlit + OpenAI template"
 authors = ["Emmatshi <etshi8712@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "app_core", from = "src" }]
+packages = [{ include = "my_bc_st005", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
