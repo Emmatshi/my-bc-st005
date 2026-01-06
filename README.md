@@ -1,42 +1,25 @@
-# Streamlit AI Template
+# 🧠 Prompt Refiner
 
-[![CI](https://github.com/Emmatshi/streamlit-ai-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Emmatshi/streamlit-ai-template/actions/workflows/ci.yml)
+[![CI](...)]
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.52-red)
 
-A reusable template for building Streamlit apps powered by OpenAI.
+A Streamlit app that rewrites rough prompts into clear, structured, and
+effective instructions for large language models.
 
-## Features
+## 🚀 Overview
 
--   Streamlit + Poetry
--   Clean `src/` layout
--   OpenAI safety guard
--   Ready for Streamlit Cloud
+Prompt Refiner helps users improve the quality of their AI prompts by
+rewriting them to be clearer, more specific, and better structured — while
+preserving the original intent.
 
-## Usage
-
-1. Click **Use this template** on GitHub
-2. Clone your new repo
-3. Add `OPENAI_API_KEY`:
-    - Local: `.streamlit/secrets.toml`
-    - Cloud: App Settings → Secrets
-4. Run:
-
-````bash
-poetry install
-poetry run python -m streamlit run main.py
-
-##  Local smoke test (one last time)
-```bash
-rm -rf .venv
-poetry env use $(pyenv which python)
-poetry install
-poetry run python -m streamlit run main.py
-````
+This app is useful for developers, content creators, and anyone working with
+large language models.
 
 ## 🧱 Architecture
 
-This template follows a clean, layered architecture that separates UI, business logic, and infrastructure.
+The app follows a clean, layered architecture that separates UI, business
+logic, and LLM integration.
 
 ```mermaid
 flowchart TD
@@ -46,16 +29,31 @@ flowchart TD
     D --> E[OpenAI API]
 ```
 
-## 🚀 Use This Template
+## ✨ Features
 
-This repository is a **GitHub template**.
+-   Side-by-side comparison of original and refined prompts
+-   Tone selection (professional, concise, creative, etc.)
+-   One-click copy of refined prompts
+-   Secure OpenAI API key handling
+-   Clean, modular code structure
 
-To create a new app from it:
+## 🏃 Run Locally
 
-1. Click **Use this template** (top right of the repo)
-2. Choose a name for your new repository
-3. Clone the new repo locally:
-    ```bash
-    git clone <your-new-repo-url>
-    cd <your-new-repo>
-    ```
+### Prerequisites
+
+-   Python 3.11
+-   Poetry
+
+### Setup
+
+```bash
+git clone https://github.com/Emmatshi/my-bc-st005.git
+cd my-bc-st005
+poetry install
+
+```
+
+## 🧩 Built With
+
+This app was built using a reusable Streamlit AI template designed to
+standardize architecture, secrets handling, and deployment.

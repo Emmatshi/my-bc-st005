@@ -9,11 +9,11 @@ Rewrite the user's prompt to be:
 - Unambiguous
 - Optimized for large language models
 
+Target tone: {tone}
+
 Preserve the original intent.
 Do NOT add new requirements.
 Do NOT answer the prompt.
-
-Return ONLY the improved prompt.
 
 User prompt:
 {user_prompt}
