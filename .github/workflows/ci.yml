@@ -27,4 +27,6 @@ jobs:
 
       - name: Validate imports
         run: |
-          poetry run python -c "import app_core"
+          poetry run python -c "import my_bc_st005"
+
+          
